@@ -1,0 +1,8 @@
+name: workflow-02
+on: issues
+jobs:
+  job-01: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify issues 
+        run: echo "${{toJSON(github)}}"
